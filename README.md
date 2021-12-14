@@ -8,12 +8,18 @@
 * C#
 * .NET
 * MSTest
+* ASP.NET Core 
+* Razor
 * NuGet
 * _git_
 * _GitHub_
 
 ## Description
-_A basic to do list application to practice using MSTest_
+_A basic to do list application to practice using MSTest and the MVC framework._
+
+## System Requirements
+* Download and install [.NET5](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)
+* A text editor, such as [VS Code](https://code.visualstudio.com/)
 
 ## Setup/Installation Requirements
 * Navigate to https://github.com/kpundt93/to-do-list
@@ -25,7 +31,8 @@ _A basic to do list application to practice using MSTest_
 * Then run the command `dotnet restore` to install project dependencies
 * Run the command `dotnet build` to build and compile the project
 * If you would like to run the project tests, run the command `dotnet test`
-* Navigate to `to-do-list/ToDoList` and run the command `dotnet run` to run the project in the terminal
+* If you would like to run the project in the browser, switch to the  `ToDoList` directory using the command `cd ../ToDoList`
+* Once in the  `ToDoList` directory, run the command `dotnet run`
 
 ## Known Bugs
 * _No known bugs_
