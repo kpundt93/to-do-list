@@ -40,11 +40,11 @@ namespace ToDoList.Controllers
 
     // This route creates new Items within a given Category, not new Categories
     [HttpPost("/categories/{categoryId}/items")]
-    public ActionResult Create(int categoryId, string itemDescription)
+    public ActionResult Create(int categoryId, string itemDescription, int itemId)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
       Category foundCategory = Category.Find(categoryId);
-      Item newItem = new Item(itemDescription);
+      Item newItem = new Item(itemDescription, itemId);
       foundCategory.AddItem(newItem);
       List<Item> categoryItems = foundCategory.Items;
       model.Add("items", categoryItems);
